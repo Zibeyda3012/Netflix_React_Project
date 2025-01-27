@@ -7,7 +7,7 @@ const Shows = () => {
 
     const getShows = async () => {
         try {
-            const response = await fetch(`hhttp://localhost:5001/api/v1/tv/trending`)
+            const response = await fetch(`http://localhost:5001/api/v1/tv/trending`)
             const data = await response.json()
 
             if (response.ok) {
